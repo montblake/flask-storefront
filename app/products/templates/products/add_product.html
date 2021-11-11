@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content">
+    <h1>Add a Product</h1>
+    <form method="post">
+      <label for="productName">Product Name</label>
+      <input type="text" id="productName" name="product_name" />
+      <br>
+      <label for="productDescription">Description</label>
+      <input type="text" id="productDescription" name="product_description" />
+      <br>
+      <label for="productImage">Image File</label>
+      <input type="text" id="productImage" name="product_image" />
+      <br>
+      <label for="productPrice">Price ($)</label>
+      <input type="text" id="productPrice" name="product_price" />
+      <br>
+      <label for="productQty">Quantity Available</label>
+      <input type="text" id="productQty" name="product_qty" />
+      <br>
+      <input type="submit">
+    </form>
+</div>
+
+{% endblock %}

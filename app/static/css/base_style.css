@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+:root {
+    --light-bg: #bbb;
+    --mid-bg: #999;
+    --dark-bg: #454545;
+    /* --light-txt: whitesmoke; */
+    --mid-txt: #666;
+    --dark-txt: #222;
+    --accent1: rgb(255, 166, 0);
+    --accent2: rgb(231, 126, 5);
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--mid-bg);
+    color: var(--dark-txt);
+}
+
+header,footer {
+    background: var(--mid-bg);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TYPOGRAPHY */
+
+
+body {
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}
+
+input, p, li {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+
+.content h1 {
+    font-size: 48px;
+    color: var(--mid-txt);
+}
+
+
+
+.content {
+    background: black;
+    color: var(--mid-txt);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 48px 48px 48px;
+}
+
+/* FLASH MESSAGES */
+.flash-message {
+    background: var(--accent1);
+    padding: 16px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+/* ADD PRODUCT */
+form {
+    width: 400px;
+    background: var(--dark-bg);
+    border: 1px solid var(--mid-txt);
+    padding: 16px 24px;
+    color: var(--dark-txt);
+}
+
+form input[type=text] {
+    width: 100%;
+    margin-bottom:8px;
+    
+}
+
+form input[type=submit] {
+    padding: 4px 8px;
+    margin: 8px 0;
+    background: var(--accent2);
+} 
+
+/* SHOW PRODUCTS */
+.product-card {
+    border: 1px solid var(--mid-txt);
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+.product-thumb {
+    width: 240px;
+}
+
+.product-thumb-frame {
+    width: 180px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+}
+
+.product-card-text {
+    background: silver;
+    width: 180px;
+    padding: 16px;
+    border-radius: 0 0 12px 12px;
+}
+
+.product-card-text ul {
+    list-style: none;
+    border-top: 1px solid var(--dark-bg);
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.product-card h2 {
+    font-size: 32px;
+}
+
+.product-card h5 {
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.product-card h4 {
+    font-size: 24px;
+}
+

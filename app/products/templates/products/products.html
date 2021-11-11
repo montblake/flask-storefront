@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block styling %}
+{% endblock %}
+
+{% block content %}
+<div class="content">
+  <h1>Ideas in Stock</h1>
+ 
+  {% for product in products %}
+  <div class="product-card">
+    <figure class="product-thumb-frame">
+      <img class="product-thumb" src="{{ url_for('static', filename='img/smallBulb5.jpeg') }}"/>
+    </figure>
+    <div class="product-card-text">
+      <h2>{{ product.name }}</h2>
+      <h3>{{ product.description}}</h3>
+      <ul>
+        
+        
+        <li>
+          <h5>Price</h5>
+          <h4>${{ product.price/ 100}}</h4>
+        </li>
+        <li>
+          <h5>Quantity Available</h5>
+          <h4>{{ product.qty_avail}}</h4>
+        </li>
+      </ul>
+    </div>
+  </div>
+    
+  {% endfor %}
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content">
+    <h1 class="error-title">Forbidden (403)</h1>
+    <div class="error-section">
+        <h4>You don't have permission to access the requested resource.</h4>
+        <h4><a href="{{ url_for('products.index') }}">The Marketplace of Ideas</a></h4>
+    </div>
+</div>
+
+{% endblock %}
